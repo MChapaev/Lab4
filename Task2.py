@@ -1,3 +1,5 @@
+from pathlib import Path
+
 # Shifting
 def shift_message(message):
     shifted_message = ''
@@ -13,5 +15,8 @@ def shift_message(message):
 
 # Main
 if __name__ == "__main__":
-    print("Hello world")
+    current_folder = Path(__file__).resolve().parent / "Files"
+    message = open(current_folder / "Task2.txt", "r", encoding="utf-8").readline()
+    print(f"Original message: {message}")
+    print(f"Decoded message: {shift_message(message)}")
 
