@@ -35,4 +35,10 @@ def process_file(filename):
 
 # Main
 if __name__ == "__main__":
-    current_folder = ""
+    current_folder = Path(__file__).resolve().parent / 'Files'
+
+    result_test = process_file(current_folder / "Test1.txt")
+    result_a = process_file(current_folder / "27-169b.txt")
+    result_b = process_file(current_folder / "27-169bb.txt")
+
+    print(f"Result Test: {result_test}, Result A: {result_a}, Result B: {result_b}")
