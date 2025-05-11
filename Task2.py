@@ -9,3 +9,9 @@ def shift_message(message):
         else:
             shifted_message += char
     return shifted_message
+
+
+# Main
+if __name__ == "__main__":
+    print("Hello world")
+
