@@ -31,3 +31,8 @@ def process_file(filename):
         n, k = map(int, f.readline().split())
         ratings = [int(f.readline()) for _ in range(n)]
     return count_valid_pairs(ratings, k)
+
+
+# Main
+if __name__ == "__main__":
+    current_folder = ""
